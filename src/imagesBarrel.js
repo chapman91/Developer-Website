@@ -10,7 +10,8 @@ const IMAGES = {
     linkedinIcon: require('./assets/icons/linkedin.svg').default,
     netlifyIcon: require('./assets/icons/netlify.svg').default,
     nodejsIcon: require('./assets/icons/nodejs.svg').default,
-    vercelIcon: require('./assets/icons/vercel.svg').default
+    vercelIcon: require('./assets/icons/vercel.svg').default,
+    comptiaIcon: require('./assets/icons/CompTIA.svg').default
 }
 
 export default IMAGES

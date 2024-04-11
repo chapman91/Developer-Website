@@ -1,21 +1,29 @@
 /* Customized Background Color */
  .custom-navbar-bg {
-background-color: var(--navbar-bg);
+   background-color: var(--navbar-bg);
  }
 
+ /* navbar layout */
 .custom-navbar {
    display: grid;
    grid-template-columns: 1fr auto;
    max-width: 80%;
-   
    margin: 20px auto;
    border-radius: 40px;
 }
+
 
  /* Center Nav Items */
  .custom-alignment {
     justify-content: center;
  }
+
+
+/* Black Color */
+.custom-alignment > .custom-nav-color {
+   color: var(--text-color);
+}
+
 
  /* Small Screen Devices */
 @media (max-width: 768px) {

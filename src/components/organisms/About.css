@@ -1,0 +1,10 @@
+
+
+.about-container {
+    background-image: linear-gradient(#F3E9D2, rgba(0, 0, 0, 0.64));
+}
+
+
+.about-container .about__title {
+    font-weight: 600 !important;
+}

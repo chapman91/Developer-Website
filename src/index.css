@@ -26,6 +26,8 @@ body {
 :root {
   --navbar-bg: #F3E9D2;
   --my-gradient: linear-gradient(to right, #F3E9D2 0%, hsl(42, 58%, 79%) 200%);
+  --hero-color: #114B5F;
+  --text-color: black;
 }
 
 

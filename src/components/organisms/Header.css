@@ -5,6 +5,8 @@
    margin: 20px auto;
    border-radius: 30px;
    padding: 2%;
+   color: var(--hero-color);
+   height: 80vh;
 }
 
 /* Text Boldness */
@@ -17,7 +19,6 @@
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   padding: 10px;
 }
 
 /* Icon Styles */
@@ -28,6 +29,11 @@
     transition: transform 0.3s ease;
 }
 
+
+.profile-picture{
+    width: 100%;
+}
+
 /* Small Devices */
 @media (max-width: 768px) {
 
@@ -36,4 +42,19 @@
     width: 30px;
     height: 30px;
 }
+
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .profile-picture{
+        width: 60%;
+    }  
+
+}
+
+
+/* Laptop Screens */
+@media (min-width: 1024px) {
+    
 }
