@@ -1,3 +1,18 @@
+
+/* Set box-sizing property to inherit for all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/* Set box-sizing property to border-box for the <html> element */
+html {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +20,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--my-gradient);
 }
+
+:root {
+  --navbar-bg: #F3E9D2;
+  --my-gradient: linear-gradient(to right, #F3E9D2 0%, hsl(42, 58%, 79%) 200%);
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+  

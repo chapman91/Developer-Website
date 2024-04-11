@@ -1,12 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
-import BlogCard from './components/molecules/BlogCard'
-import ExperienceCard from './components/molecules/ExperienceCard'
-import Form from './components/molecules/Form'
-import NavigationBar from './components/molecules/NavigationBar'
-import Header from './components/organisms/Header'
-
-
+import  NavigationBar  from "./components/molecules/NavigationBar"
+import { 
+  Header, About, Project, BlogSection, Contact
+} from "./organismsBarrel"
 
 
 function App() {
@@ -14,9 +11,10 @@ function App() {
     <div className="App">
     <NavigationBar />
     <Header />
-    <ExperienceCard />
-    <BlogCard />
-    <Form/>
+    <About />
+    <Project />
+    <BlogSection />
+    <Contact />
     </div>
   );
 }

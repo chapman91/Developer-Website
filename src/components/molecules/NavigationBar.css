@@ -1,3 +1,26 @@
-.NavigationBar {
-    background-color: blueviolet;
+/* Customized Background Color */
+ .custom-navbar-bg {
+background-color: var(--navbar-bg);
+ }
+
+.custom-navbar {
+   display: grid;
+   grid-template-columns: 1fr auto;
+   max-width: 80%;
+   
+   margin: 20px auto;
+   border-radius: 40px;
+}
+
+ /* Center Nav Items */
+ .custom-alignment {
+    justify-content: center;
+ }
+
+ /* Small Screen Devices */
+@media (max-width: 768px) {
+   .custom-alignment {
+      justify-content: center;
+      align-items: center;
+   }
 }

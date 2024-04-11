@@ -1,3 +1,39 @@
-.Header {
-    background-color: bisque;
+/* Bg-Color */
+.hero-section {
+   background-image: linear-gradient(#F3E9D2, rgba(0, 0, 0, 0.64));
+   max-width: 80%;
+   margin: 20px auto;
+   border-radius: 30px;
+   padding: 2%;
+}
+
+/* Text Boldness */
+.hero-section .hero-title {
+ font-weight: 600;
+}
+
+/* Block Styles */
+.icon-gallery {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 10px;
+}
+
+/* Icon Styles */
+.icon-gallery__icon{
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Small Devices */
+@media (max-width: 768px) {
+
+/* Adjust layout for medium and larger screens */
+.icon-gallery__icon{
+    width: 30px;
+    height: 30px;
+}
 }
