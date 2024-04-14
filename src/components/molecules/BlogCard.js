@@ -1,10 +1,32 @@
 import React from 'react'
-import './BlogCard.css'
+import './ExperienceCard.css'
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
-const BlogCard = () => {
+
+const BlogCard = ({ title, text, imageSrc }) => {
   return (
-    <div className="BlogCard">BlogCard</div>
+    <Container className="py-3">
+    <Card mb-3 style={{ backgroundColor: "white" }}>
+    <Row noGutters>
+      <Col md={2}>
+        <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
+      </Col>
+      <Col md={10} className="text-start">
+        <Card.Body>
+          <Card.Title>{title}
+          </Card.Title> 
+          <Card.Text>
+           {text}
+          </Card.Text>
+        </Card.Body>
+      </Col>
+    </Row>
+  </Card>
+  </Container>
   )
 }
 
-export default BlogCard
+export default BlogCard;

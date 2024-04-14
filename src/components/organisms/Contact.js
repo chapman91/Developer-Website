@@ -1,10 +1,13 @@
 import React from 'react'
 import "./Contact.css"
-
+import Form from "../molecules/Form"
 
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+
+      <Form/>   
+    </div>
   )
 }
 

@@ -6,10 +6,10 @@ import Container from 'react-bootstrap/Container';
 
 export const Project = () => {
   return (
+  <section>
    <Container>
-    <section>
     <div className="experience">
-    <h1>Experience</h1>
+    <h1 className="text-start display-4">Experience</h1>
     <div className="experience__download align-items-center">
      <div className="d-flex align-items-center">Resume</div> 
     <FaDownload/>
@@ -37,8 +37,8 @@ export const Project = () => {
     text="This is the description of project 4. You can add more details here."
     imageSrc="project4.jpg"
     />
-    </section>  
     </Container> 
+    </section>  
   )
 }
 

@@ -14,10 +14,10 @@ const ExperienceCard = ({ title, text, imageSrc }) => {
     <Container className="py-3">
     <Card mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
-      <Col md={4}>
+      <Col md={3}>
         <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
       </Col>
-      <Col md={8} className="text-start">
+      <Col md={9} className="text-start">
         <Card.Body>
           <Card.Title>{title}
           <FontAwesomeIcon className="chevron" icon={faArrowUpLong}/> 
