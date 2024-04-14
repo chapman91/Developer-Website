@@ -5,10 +5,11 @@ import {
   Header, About, Project, BlogSection, Contact
 } from "./organismsBarrel"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
+  
     <div className="App">
     <NavigationBar />
     <Header />
@@ -16,7 +17,8 @@ function App() {
     <Project />
     <BlogSection />
     <Contact />
-    </div>
+    </div> 
+
   );
 }
 

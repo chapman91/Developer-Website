@@ -1,0 +1,14 @@
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience__download {
+    display: flex;
+    align-items: center;
+}
+
+.experience__download > div {
+    margin-right: 10px; 
+}
