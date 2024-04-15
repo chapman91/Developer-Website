@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 const BlogCard = ({ title, text, imageSrc }) => {
   return (
     <Container className="py-3">
-    <Card mb-3 style={{ backgroundColor: "white" }}>
+    <Card className="box-shadow-effect  rounded-0" mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
       <Col md={2}>
         <img src={imageSrc} className="card-img img-fluid" alt="Card image" />

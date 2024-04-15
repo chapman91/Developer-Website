@@ -12,7 +12,7 @@ import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons';
 const ExperienceCard = ({ title, text, imageSrc }) => {
   return (
     <Container className="py-3">
-    <Card mb-3 style={{ backgroundColor: "white" }}>
+    <Card className="box-shadow-effect rounded-0" mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
       <Col md={3}>
         <img src={imageSrc} className="card-img img-fluid" alt="Card image" />

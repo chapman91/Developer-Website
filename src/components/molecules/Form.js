@@ -1,13 +1,16 @@
 import React from 'react'
 import './Form.css'
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+import LogoWeb3 from "../../assets/images/LogoWeb3.svg"
+
+
 
 const Form = () => {
   return (
-    <div className="container py-5">  {/* Container with padding */}
+    <div className="container  custom-form-style box-shadow-effect">  {/* Container with padding */}
       <div className="row d-flex justify-content-between align-items-center">
         <div className="col-md-6">  {/* Image container (6 columns on medium screens) */}
-          <img src="your-image.jpg" alt="Contact Image" className="img-fluid" />
+          <img src={LogoWeb3} alt="Contact Image" className="h-auto  w-50"/>
         </div>
         <div className="col-md-6">  {/* Form container (6 columns on medium screens) */}
           <h2 className="text-start">Contact</h2>

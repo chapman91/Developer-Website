@@ -5,7 +5,7 @@ import {
   Header, About, Project, BlogSection, Contact
 } from "./organismsBarrel"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+import Footer from './components/molecules/Footer';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
     <Project />
     <BlogSection />
     <Contact />
+    <Footer />
     </div> 
 
   );

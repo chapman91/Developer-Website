@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 
 export const Project = () => {
   return (
-  <section>
+  <section className="project-container">
    <Container>
     <div className="experience">
     <h1 className="text-start display-4">Experience</h1>
