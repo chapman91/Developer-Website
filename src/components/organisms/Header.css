@@ -7,7 +7,8 @@
    padding: 2%;
    color: var(--hero-color);
    height: 80vh;
-   
+   padding: 20px;
+   width: 100%;
 }
 
 /* Text Boldness */
@@ -30,9 +31,21 @@
     transition: transform 0.3s ease;
 }
 
+/* Border Radius Comptia */
+.icon-gallery__icon:nth-of-type(10) {
+    border-radius: 5px;
+}
+
+/* Hover Effect on Icons */
+.icon-gallery__icon:hover {
+    box-shadow: 0 0 15px rgba(105, 100, 99, 0.5);
+}
+
+
 
 .profile-picture{
     width: 100%;
+    max-width: 100%
 }
 
 /* Small Devices */
@@ -40,8 +53,8 @@
 
 /* Adjust layout for medium and larger screens */
 .icon-gallery__icon{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 }

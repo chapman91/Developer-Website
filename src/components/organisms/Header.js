@@ -4,14 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import IMAGES  from "../../imagesBarrel";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Header = () => {
   return (
     <section className="hero-section d-flex justify-content-center align-items-center">
       <Container>
       <Row className="text-start">
-        <Col>
+        <Col md={7}>
           <div className="d-flex flex-column">
           <h1 className="display-4 mb-4 hero-title col">Hey there, I am Doneil!</h1>
           <p className="lead mb-5 hero-description  font-weight-bold col">I am a software developer. I have great skills in designing friendly user interfaces. I build high performance applications and always keep security in mind.</p>
