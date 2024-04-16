@@ -13,14 +13,18 @@ export const Header = () => {
       <Row className="text-start">
         <Col md={7}>
           <div className="d-flex flex-column">
-          <h1 className="display-4 mb-4 hero-title col">Hey there, I am Doneil!</h1>
-          <p className="lead mb-5 hero-description  font-weight-bold col">I am a software developer. I have great skills in designing friendly user interfaces. I build high performance applications and always keep security in mind.</p>
+          <div className="d-flex mb-4 flex-column">
+          <h1 className="display-4 mb-1 hero-title col">Doneil Chapman</h1>
+          <h3 className="fw-semibold">Frontend Engineer</h3>
+          </div>
+          <p className="lead mb-5 hero-description  font-weight-bold col">I build pixel-perfect, engaging, and accessible digital experiences.</p>
           </div>
           <div className="d-flex px-0">
           <img src={IMAGES.linkedinIcon} alt="linkedin-icon" className="img-fluid icon-gallery__icon"/>
           <img src={IMAGES.githubIcon} alt="github-icon"  className="img-fluid  icon-gallery__icon" />
           </div>
           <div className="d-flex justify-content-start mb-4 mt-5 icon-gallery">
+            <div className="d-flex justify-content-start align-items-center"><h4 className="fw-semibold">TECH STACK</h4></div>
             <img src={IMAGES.bootstrapIcon} alt="bootstrap-icon" className="img-fluid icon-gallery__icon"/>
             <img src={IMAGES.cssIcon} alt="css-icon"  className="img-fluid icon-gallery__icon" />
             <img src={IMAGES.figmaIcon} alt="figma-icon"  className="img-fluid  icon-gallery__icon" />

@@ -11,8 +11,10 @@ function App() {
   return (
   
     <div className="App">
+    <div className="custom-viewer">
     <NavigationBar />
     <Header />
+    </div>
     <About />
     <Project />
     <BlogSection />

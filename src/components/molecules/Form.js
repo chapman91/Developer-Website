@@ -13,7 +13,7 @@ const Form = () => {
           <img src={LogoWeb3} alt="Contact Image" className="h-auto  w-50"/>
         </div>
         <div className="col-md-6">  {/* Form container (6 columns on medium screens) */}
-          <h2 className="text-start">Contact</h2>
+          <h2 className="text-start fw-semibold">CONTACT</h2>
           <form>
             <div className="mb-3 text-start">
               <label htmlFor="firstName" className="form-label">First Name</label>
@@ -31,7 +31,9 @@ const Form = () => {
               <label htmlFor="message" className="form-label">Message</label>
               <textarea className="form-control" id="message" rows="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Send</button>
+            <div className="btn-container">
+            <button type="submit" className="btn custom-btn-style ">Send</button>
+           </div>
           </form>
         </div>
        
