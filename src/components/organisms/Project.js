@@ -38,23 +38,24 @@ export const Project = ({fileName}) => {
     </div>
    
     <ExperienceCard 
-    title="Project 1"
+    title="A Solana Token and Exchange Platform"
     text="This is the description of project 1. You can add more details here."
     imageSrc={image1}
+    
     />
      <ExperienceCard 
-    title="Project 2"
+    title="Interactive Website with Contact Form for Startup Car Wash"
     text="This is the description of project 2. You can add more details here."
     imageSrc={image2}
     />
      <ExperienceCard 
-    title="Project 3"
+    title="Basketball Training Website with Booking Integration "
     text="This is the description of project 3. You can add more details here."
     imageSrc={image3}
     />
 
     <ExperienceCard 
-    title="Project 4"
+    title="A Solana token distribution tool"
     text="This is the description of project 4. You can add more details here."
     imageSrc={image4 }
     />

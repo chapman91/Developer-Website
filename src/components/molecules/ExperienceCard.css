@@ -3,6 +3,32 @@
     font-weight: 400;
 }
 
+.custom-container {
+    position: relative;
+    margin: 10px;
+}
+
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+
+.card-img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
 
 .chevron {
     transform: rotate(45deg);

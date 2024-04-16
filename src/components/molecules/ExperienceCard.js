@@ -9,14 +9,17 @@ import './ExperienceCard.css';
 
 
 
-const ExperienceCard = ({ title, text, imageSrc }) => {
+const ExperienceCard = ({ title, text, imageSrc, linkto }) => {
 
   return (
     <Container className="py-3">
     <Card className="box-shadow-effect rounded-0" mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
       <Col md={3}>
-        <img src={imageSrc} className="card-img img-fluid p-2" alt="Card image" />
+        <div className="custom-container ">
+        <div className="gradient"> </div>
+        <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
+        </div>
       </Col>
       <Col md={9} className="text-start">
         <Card.Body>
