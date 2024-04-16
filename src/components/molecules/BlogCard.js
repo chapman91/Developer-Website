@@ -16,7 +16,7 @@ const BlogCard = ({ title, text, imageSrc }) => {
       </Col>
       <Col md={10} className="text-start">
         <Card.Body>
-          <Card.Title>{title}
+          <Card.Title className="fw-semibold">{title}
           </Card.Title> 
           <Card.Text>
            {text}

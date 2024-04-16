@@ -17,7 +17,7 @@ export const Header = () => {
           <h1 className="display-4 mb-1 hero-title col">Doneil Chapman</h1>
           <h3 className="fw-semibold">Frontend Engineer</h3>
           </div>
-          <p className="lead mb-5 hero-description  font-weight-bold col">I build pixel-perfect, engaging, and accessible digital experiences.</p>
+          <p className="lead mb-5 hero-description fw-normal font-weight-bold col">I build pixel-perfect, engaging, and accessible digital experiences.</p>
           </div>
           <div className="d-flex px-0">
           <img src={IMAGES.linkedinIcon} alt="linkedin-icon" className="img-fluid icon-gallery__icon"/>

@@ -21,3 +21,7 @@ font-weight: 600;
 .experience__download > div {
     margin-right: 10px; 
 }
+
+.experience__download .resume-text {
+  margin-right: 10px; 
+}
