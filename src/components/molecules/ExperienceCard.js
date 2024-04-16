@@ -16,7 +16,7 @@ const ExperienceCard = ({ title, text, imageSrc }) => {
     <Card className="box-shadow-effect rounded-0" mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
       <Col md={3}>
-        <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
+        <img src={imageSrc} className="card-img img-fluid p-2" alt="Card image" />
       </Col>
       <Col md={9} className="text-start">
         <Card.Body>

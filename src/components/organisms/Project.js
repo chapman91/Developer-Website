@@ -3,6 +3,13 @@ import "./Project.css"
 import ExperienceCard from "../molecules/ExperienceCard"
 import { FaDownload } from 'react-icons/fa';
 import Container from 'react-bootstrap/Container';
+import image1 from "../../assets/images/baboon-embed.png";
+import image2 from "../../assets/images/gngpressurewash-embed.png";
+import image3 from "../../assets/images/recruitpreps-embed.png";
+import image4 from "../../assets/images/solana-airdrop-tool.png";
+
+
+
 
 export const Project = ({fileName}) => {
     // Handles Resume Download
@@ -29,27 +36,27 @@ export const Project = ({fileName}) => {
       </div> 
     </div>
     </div>
-
+   
     <ExperienceCard 
     title="Project 1"
     text="This is the description of project 1. You can add more details here."
-    imageSrc="project1.jpg"
+    imageSrc={image1}
     />
      <ExperienceCard 
     title="Project 2"
     text="This is the description of project 2. You can add more details here."
-    imageSrc="project2.jpg"
+    imageSrc={image2}
     />
      <ExperienceCard 
     title="Project 3"
     text="This is the description of project 3. You can add more details here."
-    imageSrc="project3.jpg"
+    imageSrc={image3}
     />
 
     <ExperienceCard 
     title="Project 4"
     text="This is the description of project 4. You can add more details here."
-    imageSrc="project4.jpg"
+    imageSrc={image4 }
     />
     </Container> 
     </section>  
