@@ -1,7 +1,19 @@
 
+
+/* Title styles */
+
 #title-bold {
     font-weight: 400;
+    transition: transform 0.2s ease-in-out;
 }
+
+
+#title-bold:hover{
+transform: translateY(-2px);
+}
+
+/*  */
+
 
 .custom-container {
     position: relative;
@@ -40,10 +52,10 @@ a:hover {
 }
 
 
-
-
+/* Chevron styles */
 
 .chevron {
     transform: rotate(45deg);
     margin-left: 15px;
 }
+
