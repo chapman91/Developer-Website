@@ -13,7 +13,7 @@ import image4 from "../../assets/images/solana-airdrop-tool.png";
 
 export const Project = ({fileName}) => {
     // Handles Resume Download
-    const handleDownload = () => {
+  const handleDownload = () => {
       const resumeUrl = `/DONEIL-CHAPMAN-RESUME.${fileName}`;
       const link = document.createElement('a');
       link.href = resumeUrl;
@@ -24,6 +24,37 @@ export const Project = ({fileName}) => {
     }
 
 
+    // Define an array of experience cards, each with its own data
+  const experienceCards = [
+      {
+        title: "A Solana Token and Exchange Platform",
+        text:"This is the description of project 1. You can add more details here.",
+        imageSrc: image1,
+        linkto: "https://661b07627b4a5ee999310c8a--babomemecoin.netlify.app/Home",
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Solana SDK', 'ThreeJs', 'Jupiter Api']
+      },
+      {
+        title: "Interactive Website with Contact Form for Startup Car Wash",
+        text: "This is the description of project 2. You can add more details here.",
+        imageSrc: image2,
+        linkto: "https://friendly-profiterole-a0ebb8.netlify.app/",
+        skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+      },
+      {
+        title: "Basketball Training Website with Booking Integration",
+        text: "This is the description of project 3. You can add more details here.",
+        imageSrc: image3,
+        linkto: "https://recruitpreps.com/",
+        skills: ['HTML', 'CSS', 'JavaScript']
+      },
+      {
+        title: "A Solana token distribution tool",
+        text: "This is the description of project 4. You can add more details here.",
+        imageSrc: image4,
+        linkto: "https://brittanychiang.com/",
+        skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+      }
+    ]
   return (
   <section className="project-container">
    <Container>
@@ -37,31 +68,16 @@ export const Project = ({fileName}) => {
     </div>
     </div>
    
-    <ExperienceCard 
-    title="A Solana Token and Exchange Platform"
-    text="This is the description of project 1. You can add more details here."
-    imageSrc={image1}
-    linkto="https://661b07627b4a5ee999310c8a--babomemecoin.netlify.app/Home"
-    />
-     <ExperienceCard 
-    title="Interactive Website with Contact Form for Startup Car Wash"
-    text="This is the description of project 2. You can add more details here."
-    imageSrc={image2}
-    linkto="https://friendly-profiterole-a0ebb8.netlify.app/"
-    />
-     <ExperienceCard 
-    title="Basketball Training Website with Booking Integration "
-    text="This is the description of project 3. You can add more details here."
-    imageSrc={image3}
-    linkto="https://recruitpreps.com/"
-    />
-
-    <ExperienceCard 
-    title="A Solana token distribution tool"
-    text="This is the description of project 4. You can add more details here."
-    imageSrc={image4}
-    linkto="https://brittanychiang.com/"
-    />
+    {experienceCards.map((card, index) => (
+      <ExperienceCard
+        key={index}
+        title={card.title}
+        text={card.text}
+        imgSrc={card.imageSrc}
+        linkto={card.linkto}
+        skills={card.skills}
+      />
+    ))}
     </Container> 
     </section>  
   )

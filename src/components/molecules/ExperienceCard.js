@@ -6,10 +6,10 @@ import Container from 'react-bootstrap/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons';
 import './ExperienceCard.css';
+import SkillButton from "../atoms/SkillButton"
 
 
-
-const ExperienceCard = ({ title, text, imageSrc, linkto }) => {
+const ExperienceCard = ({ title, text, imageSrc, linkto, skills }) => {
 
   return (
     <Container className="py-3">
@@ -32,6 +32,14 @@ const ExperienceCard = ({ title, text, imageSrc, linkto }) => {
           <Card.Text>
            {text}
           </Card.Text>
+          <div className="skills-container">
+            {skills.map((skill, index) => (
+              <SkillButton
+                key={index}
+                skillName={skill}
+              />
+            ))}
+          </div>
         </Card.Body>
       </a>
      )}
