@@ -22,6 +22,9 @@ const ExperienceCard = ({ title, text, imageSrc, linkto }) => {
         </div>
       </Col>
       <Col md={9} className="text-start">
+
+    {linkto && (
+      <a href={linkto} target="_blank" rel="noopener noreferrer">
         <Card.Body>
           <Card.Title id="title-bold" className="fw-semibold">{title}
           <FontAwesomeIcon className="chevron" icon={faArrowUpLong}/> 
@@ -30,6 +33,9 @@ const ExperienceCard = ({ title, text, imageSrc, linkto }) => {
            {text}
           </Card.Text>
         </Card.Body>
+      </a>
+     )}
+
       </Col>
     </Row>
   </Card>

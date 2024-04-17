@@ -41,23 +41,26 @@ export const Project = ({fileName}) => {
     title="A Solana Token and Exchange Platform"
     text="This is the description of project 1. You can add more details here."
     imageSrc={image1}
-    
+    linkto="https://661b07627b4a5ee999310c8a--babomemecoin.netlify.app/Home"
     />
      <ExperienceCard 
     title="Interactive Website with Contact Form for Startup Car Wash"
     text="This is the description of project 2. You can add more details here."
     imageSrc={image2}
+    linkto="https://friendly-profiterole-a0ebb8.netlify.app/"
     />
      <ExperienceCard 
     title="Basketball Training Website with Booking Integration "
     text="This is the description of project 3. You can add more details here."
     imageSrc={image3}
+    linkto="https://recruitpreps.com/"
     />
 
     <ExperienceCard 
     title="A Solana token distribution tool"
     text="This is the description of project 4. You can add more details here."
-    imageSrc={image4 }
+    imageSrc={image4}
+    linkto="https://brittanychiang.com/"
     />
     </Container> 
     </section>  
