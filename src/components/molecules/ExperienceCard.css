@@ -12,7 +12,6 @@
 transform: translateY(-2px);
 }
 
-/*  */
 
 
 .custom-container {
@@ -49,6 +48,15 @@ a {
 /* Hover effect */
 a:hover {
     color: var(--hero-color);
+}
+
+
+/* Skills Container Styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 100%;
 }
 
 

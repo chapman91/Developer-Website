@@ -1,3 +1,10 @@
-.Button {
-    background-color: blue;
+.skill-button {
+    background-color: white;
+    color: var(--hero-color);
+    border-radius: 12px;
+    padding: 5px 7px;
+    font-size: 12px;
+    border: 1px solid var(--hero-color);
+    font-weight: 600;
+    margin-bottom: 10px;
 }

@@ -73,7 +73,7 @@ export const Project = ({fileName}) => {
         key={index}
         title={card.title}
         text={card.text}
-        imgSrc={card.imageSrc}
+        imageSrc={card.imageSrc}
         linkto={card.linkto}
         skills={card.skills}
       />
