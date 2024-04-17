@@ -28,6 +28,19 @@
     object-fit: cover;
 }
 
+/* remove default anchor styles */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Hover effect */
+a:hover {
+    color: var(--hero-color);
+}
+
+
+
 
 
 .chevron {
