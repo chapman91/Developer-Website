@@ -7,29 +7,29 @@ import LogoWeb3 from "../../assets/images/LogoWeb3.svg"
 
 const Form = () => {
   return (
-    <div className="container  custom-form-style box-shadow-effect">  {/* Container with padding */}
+    <div className="container  custom-form-style box-shadow-effect"> 
       <div className="row d-flex justify-content-between align-items-center">
-        <div className="col-md-6">  {/* Image container (6 columns on medium screens) */}
+        <div className="col-md-6">  
           <img src={LogoWeb3} alt="Contact Image" className="h-auto  w-50"/>
         </div>
-        <div className="col-md-6">  {/* Form container (6 columns on medium screens) */}
+        <div className="col-md-6">  
           <h2 className="text-start fw-semibold">CONTACT</h2>
-          <form>
+          <form  action="https://formsubmit.co/webdevdoneil@proton.me" method="POST">
             <div className="mb-3 text-start">
               <label htmlFor="firstName" className="form-label">First Name</label>
-              <input type="text" className="form-control" id="firstName" />
+              <input type="text" className="form-control" id="firstName" required/>
             </div>
             <div className="mb-3 text-start">
               <label htmlFor="lastName" className="form-label">Last Name</label>
-              <input type="text" className="form-control" id="lastName" />
+              <input type="text" className="form-control" id="lastName" required/>
             </div>
             <div className="mb-3 text-start">
               <label htmlFor="email" className="form-label">Email Address</label>
-              <input type="email" className="form-control" id="email" />
+              <input type="email" className="form-control" id="email" required/>
             </div>
             <div className="mb-3 text-start">
               <label htmlFor="message" className="form-label">Message</label>
-              <textarea className="form-control" id="message" rows="3"></textarea>
+              <textarea className="form-control" id="message" rows="3" required></textarea>
             </div>
             <div className="btn-container">
             <button type="submit" className="btn custom-btn-style ">Send</button>

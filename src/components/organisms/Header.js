@@ -6,10 +6,15 @@ import Col from 'react-bootstrap/Col';
 import IMAGES  from "../../imagesBarrel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 export const Header = () => {
+
   return (
-    <section className="hero-section d-flex justify-content-center align-items-center">
-      <Container>
+
+  
+    // <section className="hero-section d-flex justify-content-center align-items-center">
+      <Container className="hero-section d-flex justify-content-center align-items-center">
+        
       <Row className="text-start">
         <Col md={7}>
           <div className="d-flex flex-column">
@@ -25,16 +30,19 @@ export const Header = () => {
           </div>
           <div className="d-flex justify-content-start mb-4 mt-5 icon-gallery">
             <div className="d-flex justify-content-start align-items-center"><h4 className="fw-semibold">TECH STACK</h4></div>
-            <img src={IMAGES.bootstrapIcon} alt="bootstrap-icon" className="img-fluid icon-gallery__icon"/>
+            <div className="d-flex">
+            <img src={IMAGES.htmlIcon} alt="html-icon"  className="img-fluid  icon-gallery__icon" />
             <img src={IMAGES.cssIcon} alt="css-icon"  className="img-fluid icon-gallery__icon" />
+            <img src={IMAGES.javascriptIcon} alt="Javascript-icon" className="img-fluid icon-gallery__icon" />
+            <img src={IMAGES.bootstrapIcon} alt="bootstrap-icon" className="img-fluid icon-gallery__icon"/>
+            <img src={IMAGES.reactIcon} alt="React-icon" className="img-fluid icon-gallery__icon"/>
+            <img src={IMAGES.nodejsIcon} alt="nodejs-icon" className="img-fluid icon-gallery__icon" />
             <img src={IMAGES.figmaIcon} alt="figma-icon"  className="img-fluid  icon-gallery__icon" />
             <img src={IMAGES.gitIcon} alt="git-icon"  className="img-fluid  icon-gallery__icon" />
-            <img src={IMAGES.htmlIcon} alt="html-icon"  className="img-fluid  icon-gallery__icon" />
-            <img src={IMAGES.javascriptIcon} alt="Javascript-icon" className="img-fluid icon-gallery__icon" />
-            <img src={IMAGES.nodejsIcon} alt="nodejs-icon" className="img-fluid icon-gallery__icon" />
             <img src={IMAGES.vercelIcon} alt="vercel-icon" className="img-fluid icon-gallery__icon"/>
             <img src={IMAGES.netlifyIcon} alt="netlify-icon" className="img-fluid icon-gallery__icon"/>
             <img src={IMAGES.comptiaIcon} alt="Comptia-icon" className="img-fluid icon-gallery__icon"/>
+            </div>
           </div>
         </Col>
         <Col md={5} className="d-flex justify-content-center align-items-center">
@@ -42,7 +50,7 @@ export const Header = () => {
         </Col>
       </Row> 
       </Container>
-    </section>
+    // </section>
   )
 }
 

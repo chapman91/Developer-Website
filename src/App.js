@@ -11,10 +11,10 @@ function App() {
   return (
   
     <div className="App">
-    <div className="custom-viewer">
+    <div style={{ paddingTop: '20px' }}>
     <NavigationBar />
-    <Header />
     </div>
+    <Header />
     <About />
     <Project />
     <BlogSection />

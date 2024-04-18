@@ -5,6 +5,7 @@ import logoImage from '../../assets/images/LogoWeb3.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Assuming Font Awesome
 import { faHome, faInfoCircle, faProjectDiagram, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
 import "./NavigationBar.css";
+// import React, { useState, useEffect } from 'react';
 
 
 function NavigationBar() {
@@ -31,8 +32,8 @@ function NavigationBar() {
  }
 
   return (
-    <Navbar expand="lg" className="custom-navbar-bg custom-navbar">
-      <Container>
+    <Navbar expand="lg" className="custom-navbar custom-navbar-bg">
+      <Container className="custom-navbar-space">
       <Navbar.Brand href="#home">
     <img
       src={logoImage}

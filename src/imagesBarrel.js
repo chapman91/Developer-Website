@@ -13,7 +13,8 @@ const IMAGES = {
     vercelIcon: require('./assets/icons/vercel.svg').default,
     comptiaIcon: require('./assets/icons/CompTIA.svg').default,
     instagramIcon: require('./assets/icons/instagram.svg').default,
-    twitterIcon: require('./assets/icons/twitter.svg').default
+    twitterIcon: require('./assets/icons/twitter.svg').default,
+    reactIcon: require('./assets/icons/react.svg').default
 }
 
 export default IMAGES

@@ -5,8 +5,10 @@
 } */
 .about-container {
     margin: 4% 0px 4% 0px;
+    display: flex;
 }
 
 .about-container .about__title {
     font-weight: 600 !important;
 }
+

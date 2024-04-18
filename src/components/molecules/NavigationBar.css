@@ -1,17 +1,22 @@
-/* Customized Background Color */
- .custom-navbar-bg {
-   background-color: var(--navbar-bg);
- }
-
- /* navbar layout */
+/* navbar layout */
 .custom-navbar {
    display: grid;
    grid-template-columns: 1fr auto;
    max-width: 80%;
    margin: 0px auto;
    border-radius: 40px;
-   margin-top: 20px;
 }
+
+
+
+
+/* Customized Background Color */
+ .custom-navbar-bg {
+   padding-top: 10px;
+   background-color: var(--navbar-bg);
+   border: 1px solid #d3cfceb6; 
+ }
+
 
 
  /* Center Nav Items */
