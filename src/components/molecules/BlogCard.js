@@ -12,7 +12,7 @@ const BlogCard = ({ title, text, imageSrc }) => {
     <Card className="box-shadow-effect  rounded-0" mb-3 style={{ backgroundColor: "white" }}>
     <Row noGutters>
       <Col md={2}>
-        <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
+        <img src={imageSrc} className="card-img img-fluid" alt="article-photo" />
       </Col>
       <Col md={10} className="text-start">
         <Card.Body>
