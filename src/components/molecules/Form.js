@@ -70,7 +70,7 @@ const Form = () => {
         <div className="container custom-form-style box-shadow-effect">
             <div className="row d-flex justify-content-between align-items-center">
                 <div className="col-md-6">
-                    <img src={LogoWeb3} alt="Contact Image" className="h-auto w-50" />
+                    <img src={LogoWeb3} alt="Logo" className="h-auto w-50" />
                 </div>
                 <div className="col-md-6">
                     <h2 className="text-start fw-semibold">CONTACT</h2>
