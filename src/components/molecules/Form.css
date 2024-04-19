@@ -26,9 +26,10 @@
 }
 
 /* Small Screens */
-/* @media (max-width: 768px) {
-    .btn-container .custom-form-style{
-        display: flex;
-        align-items: center;
+ @media (max-width: 768px) {
+  
+
+    .contact-half {
+        margin-top: 30px;
     }
-} */
+} 

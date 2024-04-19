@@ -45,7 +45,7 @@ const Form = () => {
 
             // Send form data to your server
             // You can use fetch or any other library to submit form data
-            fetch('https://formsubmit.co/webdevdoneil@proton.me', {
+            fetch('https://formsubmit.co/chapmandoneil91@gmail.com', {
                 method: 'POST',
                 body: formDataToSend,
             })
@@ -69,10 +69,10 @@ const Form = () => {
     return (
         <div className="container custom-form-style box-shadow-effect">
             <div className="row d-flex justify-content-between align-items-center">
-                <div className="col-md-6">
+                <div className="col-md-6 ">
                     <img src={LogoWeb3} alt="Logo" className="h-auto w-50" />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 contact-half">
                     <h2 className="text-start fw-semibold">CONTACT</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3 text-start">
@@ -89,7 +89,7 @@ const Form = () => {
                         </div>
                         <div className="mb-3 text-start">
                             <label htmlFor="message" className="form-label">Message</label>
-                            <textarea className="form-control" id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required></textarea>
+                            <textarea className="form-control" id="message" name="message" rows="8" value={formData.message} onChange={handleChange} required></textarea>
                         </div>
                         <Row className="d-flex justify-content-center">
                             <button type="submit" className="btn custom-btn-style">Send</button>
