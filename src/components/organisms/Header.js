@@ -25,8 +25,12 @@ export const Header = () => {
           <p className="lead mb-5 hero-description fw-normal font-weight-bold col">I build pixel-perfect, security focused, and accessible digital experiences.</p>
           </div>
           <div className="d-flex px-0">
+            <a href="https://www.linkedin.com/in/doneil-chapman-239209299/" target="_blank" rel="noopener noreferrer">
           <img src={IMAGES.linkedinIcon} alt="linkedin-icon" className="img-fluid icon-gallery__icon"/>
+            </a>
+          <a href="https://github.com/chapman91" target="_blank" rel="noopener noreferrer">
           <img src={IMAGES.githubIcon} alt="github-icon"  className="img-fluid  icon-gallery__icon" />
+          </a>
           </div>
           <div className="d-flex justify-content-start mb-4 mt-5 icon-gallery">
             <div className="d-flex justify-content-start align-items-center"><h4 className="fw-semibold">TECH STACK</h4></div>
