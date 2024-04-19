@@ -3,6 +3,8 @@ import './Form.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import LogoWeb3 from "../../assets/images/LogoWeb3.svg";
 import useRecapthcaV3 from '../hooks/reCaptchav3/index';
+import {Row} from 'react-bootstrap'
+
 
 const Form = () => {
     // Call the useRecapthcaV3 hook to get the executeRecapthca function
@@ -89,9 +91,9 @@ const Form = () => {
                             <label htmlFor="message" className="form-label">Message</label>
                             <textarea className="form-control" id="message" name="message" rows="3" value={formData.message} onChange={handleChange} required></textarea>
                         </div>
-                        <div className="btn-container">
+                        <Row className="d-flex justify-content-center">
                             <button type="submit" className="btn custom-btn-style">Send</button>
-                        </div>
+                        </Row>
                     </form>
                 </div>
             </div>

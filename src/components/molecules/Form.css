@@ -24,3 +24,11 @@
     border-radius: 15px;
     max-width: 300px;
 }
+
+/* Small Screens */
+/* @media (max-width: 768px) {
+    .btn-container .custom-form-style{
+        display: flex;
+        align-items: center;
+    }
+} */

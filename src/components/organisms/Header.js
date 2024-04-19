@@ -34,7 +34,7 @@ export const Header = () => {
           </div>
           <div className="d-flex justify-content-start mb-4 mt-5 icon-gallery">
             <div className="d-flex justify-content-start align-items-center"><h4 className="fw-semibold">TECH STACK</h4></div>
-            <div className="d-flex">
+            <div className="d-flex flex-wrap">
             <img src={IMAGES.htmlIcon} alt="html-icon"  className="img-fluid  icon-gallery__icon" />
             <img src={IMAGES.cssIcon} alt="css-icon"  className="img-fluid icon-gallery__icon" />
             <img src={IMAGES.javascriptIcon} alt="Javascript-icon" className="img-fluid icon-gallery__icon" />
