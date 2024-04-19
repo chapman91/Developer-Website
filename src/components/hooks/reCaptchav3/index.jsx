@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 
 
 
@@ -36,7 +36,7 @@ const useRecapthcaV3 = () => {
       // Is used to trigger a reCAPTCHA action
       return await window.grecaptcha.execute(reCaptchaKey, {action})
     }
-  })
+  }, [isRecapthcaReady, reCaptchaKey])
 
     return executeRecapthca
  
