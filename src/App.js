@@ -6,10 +6,12 @@ import {
 } from "./organismsBarrel"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/molecules/Footer';
-import useRecapthcaV3 from './components/hooks/reCaptchav3/index'
 
 
 function App() {
+
+
+
   return (
   
     <div className="App">
