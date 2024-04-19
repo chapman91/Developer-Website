@@ -18,7 +18,7 @@ const ExperienceCard = ({ title, text, imageSrc, linkto, skills }) => {
       <Col md={3}>
         <div className="custom-container ">
         <div className="gradient"> </div>
-        <img src={imageSrc} className="card-img img-fluid" alt="Card image" />
+        <img src={imageSrc} className="card-img img-fluid" alt="experience card" />
         </div>
       </Col>
       <Col md={9} className="text-start">

@@ -89,7 +89,7 @@ const Form = () => {
                         </div>
                         <div className="mb-3 text-start">
                             <label htmlFor="message" className="form-label">Message</label>
-                            <textarea className="form-control" id="message" name="message" rows="3" value={formData.message} onChange={handleChange} required></textarea>
+                            <textarea className="form-control" id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required></textarea>
                         </div>
                         <Row className="d-flex justify-content-center">
                             <button type="submit" className="btn custom-btn-style">Send</button>
