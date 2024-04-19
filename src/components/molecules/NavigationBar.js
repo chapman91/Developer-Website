@@ -5,7 +5,6 @@ import logoImage from '../../assets/images/LogoWeb3.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Assuming Font Awesome
 import { faHome, faInfoCircle, faProjectDiagram, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
 import "./NavigationBar.css";
-// import React, { useState, useEffect } from 'react';
 
 
 function NavigationBar() {
@@ -46,19 +45,19 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav" className="custom-alignment gap-x-2">
           <Nav className='justify-content-center'>
             <Nav.Item className='d-flex align-items-center px-4 text-dark'>
-            <Nav.Link href="#home"> <HomeIcon/> Home</Nav.Link>
+            <Nav.Link href="#Header"> <HomeIcon/> Home</Nav.Link>
             </Nav.Item>
             <Nav.Item className='d-flex align-items-center px-4 text-dark'>
-            <Nav.Link href="#about"><AboutIcon/> About</Nav.Link>
+            <Nav.Link href="#About"><AboutIcon/> About</Nav.Link>
             </Nav.Item>
             <Nav.Item className='d-flex align-items-center px-4 text-dark'>
-            <Nav.Link href="#projects"><ProjectIcon/> Projects</Nav.Link>
+            <Nav.Link href="#Projects"><ProjectIcon/> Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item className='d-flex align-items-center px-4 text-dark'>
-            <Nav.Link href="#blog"><BlogIcon/> Blog</Nav.Link>
+            <Nav.Link href="#BlogSection"><BlogIcon/> Blog</Nav.Link>
             </Nav.Item>
             <Nav.Item className='d-flex align-items-center px-4 text-dark'>
-            <Nav.Link href="#contacts"><ContactsIcon/> Contacts</Nav.Link>
+            <Nav.Link href="#Contact"><ContactsIcon/> Contacts</Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

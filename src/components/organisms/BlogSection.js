@@ -6,7 +6,7 @@ import "./BlogSection.css"
 
 export const BlogSection = () => {
   return (
-    <section className="blog-section">
+    <section id="BlogSection"className="blog-section">
     <Container>
     <div className="text-start ">
       <h1 className="display-4">Blog</h1>

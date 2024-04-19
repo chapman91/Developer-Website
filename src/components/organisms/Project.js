@@ -56,7 +56,7 @@ export const Project = ({fileName}) => {
       }
     ]
   return (
-  <section className="project-container">
+  <section id="Projects" className="project-container">
    <Container>
     <div className="experience">
     <h1 className="text-start display-4">Experience</h1>

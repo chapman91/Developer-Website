@@ -4,7 +4,7 @@ import Form from "../molecules/Form"
 
 export const Contact = () => {
   return (
-    <div className="contact-form">
+    <div id="Contact" className="contact-form">
       <Form/>   
     </div>
   )
