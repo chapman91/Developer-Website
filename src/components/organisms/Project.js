@@ -49,10 +49,10 @@ export const Project = ({fileName}) => {
       },
       {
         title: "A Solana token distribution tool",
-        text: "This is the description of project 4. You can add more details here.",
+        text: "Developed an automated tool enabling users to utilize their private and public keys to specify token amounts for airdropping to a list of Solana wallet addresses. Simplifies the distribution process for Solana tokens.",
         imageSrc: image4,
         linkto: "https://brittanychiang.com/",
-        skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+        skills: ['Node.js', 'Javascript', 'Python3', 'Solana']
       }
     ]
   return (
