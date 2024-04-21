@@ -28,21 +28,21 @@ export const Project = ({fileName}) => {
   const experienceCards = [
       {
         title: "A Solana Token and Exchange Platform",
-        text:"This is the description of project 1. You can add more details here.",
+        text:"Designed a sleek user interface using Google's Material Library. Developed a responsive application for Solana SLP tokens, integrating secure web3 wallet functionalities. Users can seamlessly interact with the Jupiter user interface embedded into the app, leveraging the Popular Solana Dex.",
         imageSrc: image1,
         linkto: "https://661b07627b4a5ee999310c8a--babomemecoin.netlify.app/Home",
         skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Solana SDK', 'ThreeJs', 'Jupiter Api']
       },
       {
         title: "Interactive Website with Contact Form for Startup Car Wash",
-        text: "This is the description of project 2. You can add more details here.",
+        text: " Designed user-friendly UI, configured stable servers and applied SEO techniques for visibility.",
         imageSrc: image2,
         linkto: "https://friendly-profiterole-a0ebb8.netlify.app/",
         skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
       },
       {
         title: "Basketball Training Website with Booking Integration",
-        text: "This is the description of project 3. You can add more details here.",
+        text: "Designed a modern user interface using Google’s Material Library and built a responsive, interactive website. Securely integrated the Calendly API with OAuth for scheduling, implemented Google’s V2 Captcha for security, and included a form for users to send messages to the business.",
         imageSrc: image3,
         linkto: "https://recruitpreps.com/",
         skills: ['HTML', 'CSS', 'JavaScript']
