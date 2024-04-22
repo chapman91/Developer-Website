@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import LogoWeb3 from "../../assets/images/LogoWeb3.svg";
-import useRecapthcaV3 from '../hooks/reCaptchav3/index';
+import useRecaptchaV3 from '../hooks/reCaptchav3/index';
 import {Row} from 'react-bootstrap'
 
 
