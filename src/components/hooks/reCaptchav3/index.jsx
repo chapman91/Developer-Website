@@ -6,7 +6,7 @@ const useRecaptchaV3 = () => {
 
 
   // Sitekey variable
-  const SiteKey = process.env.SITE_KEY;
+  const SiteKey = process.env.REACT_APP_SITE_KEY;
 
 
 // State Management 
