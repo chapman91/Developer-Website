@@ -1,45 +1,46 @@
-import { useEffect, useState, useCallback } from 'react'
+import React,{ useEffect, useState, useCallback } from 'react'
 
 
 
-const useRecapthcaV3 = () => {
+const useRecaptchaV3 = () => {
 
-  const reCaptchaKey = process.env.SITE_KEY;
+  const SiteKey = process.env.SITE_KEY;
 
 
 // State Management 
-  const [isRecapthcaReady, setIsRecapthcaReady] = useState(false)
+  const [isRecaptchaReady, setIsRecaptchaReady] = useState(false)
   
   
 // isRecapthcaReady is a state variable 
 
   useEffect(() => {
     if(window.grecaptcha) {
-        setIsRecapthcaReady(true)
+        setIsRecaptchaReady(true)
     } 
-    // Loads reCAPTCHA script by creating a script element & appending it to document's head
+    // Loads reCAPTCHA script API by creating a script element & appending it to document's head
     else {
         const script = document.createElement('script')
-        script.src = `https://www.google.com/recaptcha/api.js?render=${reCaptchaKey}`
+        script.src = `https://www.google.com/recaptcha/api.js?render=${SiteKey}`
         script.async = true 
         script.defer = true 
         document.head.appendChild(script)
-        script.onload = () => {setIsRecapthcaReady(true)}
+        script.onload = () => {setIsRecaptchaReady(true)}
     }
-  }, [reCaptchaKey])
+  }, [SiteKey])
 
 
   // Hook
-  const executeRecapthca = useCallback(async (action) => {
+  const executeRecaptcha = useCallback(async (action) => {
     
-    if(isRecapthcaReady && window.grecaptcha) {
+    if(isRecaptchaReady && window.grecaptcha) {
       // Is used to trigger a reCAPTCHA action
-      return await window.grecaptcha.execute(reCaptchaKey, {action})
+      return await window.grecaptcha.execute(SiteKey, {action})
     }
-  }, [isRecapthcaReady, reCaptchaKey])
+  }, [isRecaptchaReady, SiteKey])
 
-    return executeRecapthca;
+    return executeRecaptcha;
+
  
 }
 
-export default useRecapthcaV3;
+export default useRecaptchaV3;

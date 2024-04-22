@@ -8,8 +8,8 @@ import {Row} from 'react-bootstrap'
 
 const Form = () => {
     // Call the useRecapthcaV3 hook to get the executeRecapthca function
-    const executeRecapthca = useRecapthcaV3();
-
+    const executeRecaptcha = useRecaptchaV3();
+    
     // State management for form fields
     // setFormData is a setter function
     // useState hook is applied here
@@ -38,7 +38,7 @@ const Form = () => {
         // reCAPTCHA verification process gets execution 
         // returns the result of the reCAPTCHA verification process
         // The result is assigned to the variable token
-        const token = await executeRecapthca('submit');
+        const token = await executeRecaptcha('submit');
 
 
         // If reCAPTCHA returns a valid token, proceed with form submission
