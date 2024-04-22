@@ -55,7 +55,7 @@ const Form = () => {
 
             // Send form data to your server
             // You can use fetch or any other library to submit form data
-            fetch('https://formsubmit.co/chapmandoneil91@gmail.com', {
+            fetch('https://formsubmit.co/webdevdoneil@proton.me', {
                 method: 'POST',
                 body: formDataToSend,
             })
