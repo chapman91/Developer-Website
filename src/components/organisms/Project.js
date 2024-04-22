@@ -52,7 +52,7 @@ export const Project = ({fileName}) => {
         text: "Developed an automated tool enabling users to utilize their private and public keys to specify token amounts for airdropping to a list of Solana wallet addresses. Simplifies the distribution process for Solana tokens.",
         imageSrc: image4,
         linkto: "https://brittanychiang.com/",
-        skills: ['Node.js', 'Javascript', 'Python3', 'Solana']
+        skills: ['Node.js', 'JavaScript', 'Python3', 'Solana']
       }
     ]
   return (

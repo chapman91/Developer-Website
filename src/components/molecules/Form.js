@@ -11,6 +11,8 @@ const Form = () => {
     const executeRecapthca = useRecapthcaV3();
 
     // State management for form fields
+    // setFormData is a setter function
+    // useState hook is applied here
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -20,16 +22,24 @@ const Form = () => {
 
     // Handle form field changes
     const handleChange = (e) => {
+        // Destructuring Event Object for name and value properties
         const { name, value } = e.target;
+        // Updating Form Data State/ update object in JavaScript
+        // Spread operator creates a copy of the current state of the 'formData' object
         setFormData({ ...formData, [name]: value });
     };
 
     // Handle form submission
     const handleSubmit = async (e) => {
+
+        // Prevents the Page from reloading
         e.preventDefault();
 
-        // Execute reCAPTCHA action 'submit'
+        // reCAPTCHA verification process gets execution 
+        // returns the result of the reCAPTCHA verification process
+        // The result is assigned to the variable token
         const token = await executeRecapthca('submit');
+
 
         // If reCAPTCHA returns a valid token, proceed with form submission
         if (token) {
@@ -61,7 +71,9 @@ const Form = () => {
             .catch(error => {
                 console.error('Error:', error);
             });
-        } else {
+        } 
+        
+        else {
             console.log('reCAPTCHA execution failed');
         }
     };
@@ -91,6 +103,7 @@ const Form = () => {
                             <label htmlFor="message" className="form-label">Message</label>
                             <textarea className="form-control" id="message" name="message" rows="8" value={formData.message} onChange={handleChange} required></textarea>
                         </div>
+                        <div id="recaptcha-container" className="g-recaptcha"> </div>
                         <Row className="d-flex justify-content-center">
                             <button type="submit" className="btn custom-btn-style">Send</button>
                         </Row>

@@ -38,8 +38,8 @@ const useRecapthcaV3 = () => {
     }
   }, [isRecapthcaReady, reCaptchaKey])
 
-    return executeRecapthca
+    return executeRecapthca;
  
 }
 
-export default useRecapthcaV3
+export default useRecapthcaV3;
