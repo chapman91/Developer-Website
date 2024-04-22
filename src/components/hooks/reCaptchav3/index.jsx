@@ -37,7 +37,11 @@ const useRecaptchaV3 = () => {
     if(isRecaptchaReady && window.grecaptcha) {
       // Is used to trigger a reCAPTCHA action
       return await window.grecaptcha.execute(SiteKey, {action})
+    } else {
+      console.warn("Recaptcha is not ready yet!")
     }
+
+
   }, [isRecaptchaReady, SiteKey])
 
     return executeRecaptcha;
