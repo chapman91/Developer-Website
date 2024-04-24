@@ -20,6 +20,8 @@ const Form = () => {
         message: '',
     });
 
+    const [messageSent, setMessageSent] = useState(false);
+
     // Handle form field changes
     const handleChange = (e) => {
         // Destructuring Event Object for name and value properties
@@ -34,6 +36,11 @@ const Form = () => {
 
         // Prevents the Page from reloading
         e.preventDefault();
+ 
+        if (messageSent) {
+            console.log('Message already sent');
+            return;
+        }
 
         // reCAPTCHA verification process gets execution 
         // returns the result of the reCAPTCHA verification process
@@ -105,7 +112,7 @@ const Form = () => {
                         </div>
                         <div id="recaptcha-container" className="g-recaptcha"> </div>
                         <Row className="d-flex justify-content-center">
-                            <PopUp/>
+                            <PopUp messageSent={messageSent} />
                         </Row>
                     </form>
                 </div>
