@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import LogoWeb3 from "../../assets/images/LogoWeb3.svg";
 import useRecaptchaV3 from '../hooks/reCaptchav3/index';
 import {Row} from 'react-bootstrap'
+import PopUp from "./Modal"
 
 // import PopUp from './PopUp.js' // Import the Popup Component 
 
@@ -115,8 +116,7 @@ const Form = ({ toggleModal }) => {
                         </div>
                         <div id="recaptcha-container" className="g-recaptcha"> </div>
                         <Row className="d-flex justify-content-center">
-                            <button onClick={toggleModal} type="submit" className="btn custom-btn-style">Send</button>
-                              
+                            <PopUp/>                  
                        </Row>                                
                     </form>   
                 </div>

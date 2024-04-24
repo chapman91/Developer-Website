@@ -3,10 +3,10 @@ import "./Contact.css"
 import Form from "../molecules/Form"
 
 
-export const Contact = ({toggleModal}) => {
+export const Contact = () => {
   return (
     <div id="Contact" className="contact-form">
-      <Form toggleModal={toggleModal} />   
+      <Form />   
     </div>
   )
 }

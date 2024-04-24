@@ -11,12 +11,7 @@ import React, { useState } from 'react';
 
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleModal = () => {
-    setShowModal(!showModal);
-  };
-
+ 
   return (
   
     <div className="App">
@@ -27,8 +22,8 @@ function App() {
     <About />
     <Project />
     <BlogSection />
-    <Contact toggleModal={toggleModal} />
-    {showModal && <Modal />}
+    <Contact/>
+   
     <Footer />
     </div> 
 

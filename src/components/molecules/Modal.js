@@ -1,24 +1,36 @@
-import React from 'react'
-// import LogoWeb3 from "../../assets/images/LogoWeb3.svg"
-import "./Modal.css"
+import { useState } from 'react';
 
+import Modal from 'react-bootstrap/Modal';
 
-const Modal = ({ trigger, children }) => {
+function PopUp() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div className={`modal ${trigger ? 'show' : ''}`}>
+    <>
 
-      {/* Overlay */}
-        <div className="overlay"></div>   
-        <div className="modal-content">
-        {/* <img src={LogoWeb3}  alt="Logo"></img>
-        <h2>Thank You!</h2>
-        <p>Your message was successfully sent!</p> */}
-       
-        <button className="close-modal" type="button">OK</button>
-        {children}
-       </div>
-    </div>
+      <button onClick={handleShow} type="submit" className="btn custom-btn-style">Send</button>
+
+      <Modal
+        show={show}  // Prop to control the visibility of the modal
+        onHide={handleClose}  // Function to handle modal close event
+        backdrop="static"  // Prop to control the behavior of the modal backdrop
+        keyboard={false} // Prop to disable closing the modal by pressing the escape key
+      >
+        <Modal.Header closeButton className="text-center border-0">
+          <Modal.Title className="w-100 font-weight-bold" >Thank You!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="text-center border-0">
+         Your message was successfully sent to Doneil
+        </Modal.Body>
+        <Modal.Footer  className="justify-content-center border-0">
+        <button onClick={handleClose} type="submit" className="btn custom-btn-style">Close</button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
 
-export default Modal
+export default PopUp;
