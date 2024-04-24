@@ -6,11 +6,16 @@ import {
 } from "./organismsBarrel"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/molecules/Footer';
+import Modal from './components/molecules/Modal';
+import React, { useState } from 'react';
 
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
 
-
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
 
   return (
   
@@ -22,7 +27,8 @@ function App() {
     <About />
     <Project />
     <BlogSection />
-    <Contact />
+    <Contact toggleModal={toggleModal} />
+    {showModal && <Modal />}
     <Footer />
     </div> 
 

@@ -4,21 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import LogoWeb3 from "../../assets/images/LogoWeb3.svg";
 import useRecaptchaV3 from '../hooks/reCaptchav3/index';
 import {Row} from 'react-bootstrap'
-import Modal from "./Modal"
+
 // import PopUp from './PopUp.js' // Import the Popup Component 
 
-const Form = () => {
+const Form = ({ toggleModal }) => {
     // Simulate form submission logic
     // setModal is the hook's updater function
-   const [modal, setModal] = useState(false);
-
+   
 // The "!" is called logical "NOT" operator. Unary operator
 
-   const toggleModal = () => {
-    setModal(!modal);
-    document.body.classList.toggle('active-modal', !modal)
-   };
-
+   
  // Call the useRecapthcaV3 hook to get the executeRecapthca function
     const executeRecaptcha = useRecaptchaV3();
     
@@ -121,7 +116,7 @@ const Form = () => {
                         <div id="recaptcha-container" className="g-recaptcha"> </div>
                         <Row className="d-flex justify-content-center">
                             <button onClick={toggleModal} type="submit" className="btn custom-btn-style">Send</button>
-                            {modal && <Modal onClick={toggleModal}/>}  
+                              
                        </Row>                                
                     </form>   
                 </div>
