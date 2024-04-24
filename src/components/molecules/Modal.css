@@ -1,3 +1,4 @@
+
 /* Style connects to the modal  */
 body.active-modal {
     overflow-y: hidden;
@@ -30,15 +31,6 @@ body.active-modal {
     max-width: 300px;
 }
 
-
-
-/* Modal Styles */
-/* .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
-} */
 
 .modal, .overlay {
     width: 100vw;
@@ -75,11 +67,5 @@ body.active-modal {
 
 
 
-/* Small Screens */
- @media (max-width: 768px) {
-  
-
-    .contact-half {
-        margin-top: 30px;
-    }
-} 
+/* Position Absolute removes the element from the normal document flow and position relative its nearest positioned ancestor */
+/*  */
