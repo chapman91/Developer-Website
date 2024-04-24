@@ -69,7 +69,17 @@ const Form = () => {
             .then(response => {
                 if (response.ok) {
                     console.log('Form submitted successfully');
-                    // Handle successful form submission
+
+                    // Clear form fields after successful submission
+                    setFormData({ firstName: '', lastName: '', email: '', message: '' }); 
+                    
+                    // Prevent Sending Twice
+                    setMessageSent(true);
+                    
+                  
+                    
+                   
+                          // Handle successful form submission
                 } else {
                     console.log('Form submission failed');
                     // Handle form submission failure
