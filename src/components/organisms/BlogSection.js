@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import "./BlogSection.css"
 import imageI from "../../assets/images/blockchainarticle1.jpg"
 import imageII from "../../assets/images/stuxnet.jpg"
+import imageIII from "../../assets/images/web3.jpg"
 
 
 
@@ -27,9 +28,9 @@ export const BlogSection = () => {
     imageSrc={imageII}
     />
     <BlogCard
-    title="Article 3"
-    text="This is a description of the three article."
-    imageSrc="article3.jpg"
+    title="Web3: The Future of the Internet"
+    text="Navigating the Dawn of Web3: Decentralization, Cryptocurrencies, and the Future of the Internet."
+    imageSrc={imageIII}
     />
     </Container>
     </section>
