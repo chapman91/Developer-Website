@@ -11,19 +11,30 @@ import image4 from "../../assets/images/solana-airdrop-tool.png";
 
 
 
-export const Project = ({fileName}) => {
-    // Handles Resume Download
+export const Project = () => {
+
   const handleDownload = () => {
-      const resumeUrl = `/DONEIL-CHAPMAN-RESUME.${fileName}`;
-      const link = document.createElement('a');
-      link.href = resumeUrl;
-      link.setAttribute('download', fileName);
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
+  // Specify the file name and extension
+  const fileName = 'DONEILCHAPMANRESUME.pdf';
+
+  // Construct the URL to the resume file in the public folder
+  const resumeUrl =  '/' + fileName;
+
+  // Create a link element to trigger the download 
+  const link = document.createElement('a');
+  link.href = resumeUrl;
+  link.setAttribute('download', fileName);
+
+  // Append the link to the document body and trigger the download 
+  document.body.appendChild(link);
+  link.click();
 
 
+  // Clean up: remove the link element from the document body
+  document.body.removeChild(link);
+ 
+  };
+   
     // Define an array of experience cards, each with its own data
   const experienceCards = [
       {
@@ -81,5 +92,5 @@ export const Project = ({fileName}) => {
     </Container> 
     </section>  
   )
-}
+    };
 
