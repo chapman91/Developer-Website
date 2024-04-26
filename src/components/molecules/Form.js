@@ -7,6 +7,11 @@ import {Row} from 'react-bootstrap'
 import PopUp from './Modal'
 
 const Form = () => {
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
+
+
+
     // Call the useRecapthcaV3 hook to get the executeRecapthca function
     const executeRecaptcha = useRecaptchaV3();
     
@@ -20,6 +25,8 @@ const Form = () => {
         message: '',
     });
 
+
+    // Indicates messages was sent successfully 
     const [messageSent, setMessageSent] = useState(false);
 
     // Handle form field changes
@@ -73,12 +80,14 @@ const Form = () => {
                     // Clear form fields after successful submission
                     setFormData({ firstName: '', lastName: '', email: '', message: '' }); 
                     
-                    // Prevent Sending Twice
+                    setFormSubmitted(true);
+                    // setModalVisible(true);
+
+                    // Prevent Sending Twice 
                     setMessageSent(true);
                     
                   
-                    
-                   
+                       
                           // Handle successful form submission
                 } else {
                     console.log('Form submission failed');
@@ -122,7 +131,9 @@ const Form = () => {
                         </div>
                         <div id="recaptcha-container" className="g-recaptcha"> </div>
                         <Row className="d-flex justify-content-center">
-                            <PopUp messageSent={messageSent} />
+                            {formSubmitted &&  <PopUp showPopUp={true}  messageSent={messageSent} onClose={() => setFormSubmitted(false)} /> }
+                            <button type="submit" className="btn custom-btn-style">Send</button>
+
                         </Row>
                     </form>
                 </div>

@@ -1,17 +1,38 @@
-import { useState } from 'react';
+import { useState,  useEffect } from 'react';
 
 import Modal from 'react-bootstrap/Modal';
 
-function PopUp() {
+function PopUp({showPopUp, onClose}) {
+
+  // Stat Management
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  // useState hook is used to manage the local state of the modal visibility 
+  useEffect(() => {
+    setShow(showPopUp);
+  }, [showPopUp]);
+
+  // Closes the modal
+  const handleClose = () => {
+    // Sets the show state to false, 'hiding the modal'
+    setShow(false);
+    // 
+    onClose();
+  }
+
+
+
+  // A function that is storing the logic to change the state of the setter function
+  // const handleClose = () => setShow(false);
+
+  // A function that is storing the logic to change the state of the setter function
+
   const handleShow = () => setShow(true);
 
   return (
     <>
-
-      <button onClick={handleShow} type="submit" className="btn custom-btn-style">Send</button>
+      {/* Submit Button */}
+      {/* <button onClick={handleShow} type="submit" className="btn custom-btn-style">Send</button> */}
 
       <Modal
         show={show}  // Prop to control the visibility of the modal
