@@ -41,7 +41,7 @@ export const Project = () => {
         title: "A Solana Token and Exchange Platform",
         text:"Designed a sleek user interface using Google's Material Library. Developed a responsive application for Solana SLP tokens, integrating secure web3 wallet functionalities. Users can seamlessly interact with the Jupiter user interface embedded into the app, leveraging the Popular Solana Dex.",
         imageSrc: image1,
-        linkto: "https://661b07627b4a5ee999310c8a--babomemecoin.netlify.app/Home",
+        linkto: "https://662497bdb7face573ec03b4c--babomemecoin.netlify.app/",
         skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Solana SDK', 'ThreeJs', 'Jupiter Api']
       },
       {
