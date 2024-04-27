@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import './BlogCard.css' 
 
 
-const BlogCard = ({ title, text, imageSrc }) => {
+const BlogCard = ({ title, text, imageSrc, fullArticleUrl }) => {
   return (
     <Container className="py-3">
     <Card className="box-shadow-effect  Card-Style rounded-0" mb-3 style={{ backgroundColor: "white" }}>
@@ -22,6 +22,7 @@ const BlogCard = ({ title, text, imageSrc }) => {
           <Card.Text>
            {text}
           </Card.Text>
+          <a href={fullArticleUrl} className="read-more-link"> Read More </a>
         </Card.Body>
       </Col>
     </Row>
