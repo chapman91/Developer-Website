@@ -20,7 +20,7 @@ export const Header = () => {
           <div className="d-flex flex-column">
           <div className="d-flex mb-4 flex-column">
           <h1 className="display-4 mb-1 hero-title col">Doneil Chapman</h1>
-          <h3 className="fw-semibold">Frontend Engineer</h3>
+          <h3 className="fw-semibold">Software Engineer</h3>
           </div>
           <p className="lead mb-5 hero-description fw-normal font-weight-bold col">I build pixel-perfect, security focus, and accessible digital experiences.</p>
           </div>
