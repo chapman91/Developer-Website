@@ -63,7 +63,7 @@ export const Project = () => {
         text: "Converted a design file into a fully functional web application. This involved implementing complex UI components, optimizing the website for performance, and ensuring seamless cross-browser compatibility across various platforms and devices.",
         imageSrc: image4,
         linkto: "https://main--golden-mochi-f10593.netlify.app/",
-        skills: ['JavaScript', 'JavaScript', 'HTML', 'CSS']
+        skills: ['React', 'JavaScript', 'HTML', 'CSS']
       }
     ]
   return (
