@@ -59,11 +59,11 @@ export const Project = () => {
         skills: ['HTML', 'CSS', 'JavaScript']
       },
       {
-        title: "A Solana token distribution tool",
-        text: "Developed an automated tool enabling users to utilize their private and public keys to specify token amounts for airdropping to a list of Solana wallet addresses. Simplifies the distribution process for Solana tokens.",
+        title: "Bitcoin Startup",
+        text: "Converted a design file into a fully functional web application. This involved implementing complex UI components, optimizing the website for performance, and ensuring seamless cross-browser compatibility across various platforms and devices.",
         imageSrc: image4,
-        linkto: "https://brittanychiang.com/",
-        skills: ['Node.js', 'JavaScript', 'Python3', 'Solana']
+        linkto: "https://main--golden-mochi-f10593.netlify.app/",
+        skills: ['JavaScript', 'JavaScript', 'HTML', 'CSS']
       }
     ]
   return (
