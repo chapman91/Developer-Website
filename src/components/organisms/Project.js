@@ -7,6 +7,8 @@ import image1 from "../../assets/images/baboon-embed.png";
 import image2 from "../../assets/images/gngpressurewash-embed.png";
 import image3 from "../../assets/images/recruitpreps-embed.png";
 import image4 from "../../assets/images/solana-airdrop-tool.png";
+import image5 from "../../assets/images/cyrocoin-embed.png";
+import image6 from "../../assets/images/dndproperty-embed.png";
 
 
 
@@ -64,6 +66,20 @@ export const Project = () => {
         imageSrc: image4,
         linkto: "https://main--golden-mochi-f10593.netlify.app/",
         skills: ['React', 'JavaScript', 'HTML', 'CSS']
+      },
+      {
+        title: "Solana Startup",
+        text: "Project manager for SyncSphere Labs. A company that operates on the Solana blockchain. Executed project from ideation to completion over a period of seven months. Leading a team of software engineers, designers, brand experts and talented artists. ",
+        imageSrc: image5,
+        linkto: "https://www.cyrocoin.xyz/",
+        skills: ['Next.js', 'SLP Token', 'Solana Blockchain', 'Figma', 'Vercel']
+      },
+      {
+        title: "DND Real Estate Company",
+        text: "Designed and developed a fast and responsive website for a Delaware real estate cash exchange business.",
+        imageSrc: image6,
+        linkto: "https://dndpropertyresolver.netlify.app/",
+        skills: ['React', 'Tailwind', 'Algolia API', 'DaisyUI']
       }
     ]
   return (
