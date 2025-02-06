@@ -46,6 +46,8 @@ export const Header = () => {
             <img src={IMAGES.vercelIcon} alt="vercel-icon" className="img-fluid icon-gallery__icon"/>
             <img src={IMAGES.netlifyIcon} alt="netlify-icon" className="img-fluid icon-gallery__icon"/>
             <img src={IMAGES.comptiaIcon} alt="Comptia-icon" className="img-fluid icon-gallery__icon"/>
+            <img src={IMAGES.sqlIcon} alt="Sql-icon" className="img-fluid icon-gallery__icon"/>
+            <img src={IMAGES.nextjsIcon} alt="Nextjs-icon" className="img-fluid icon-gallery__icon"/>
             </div>
           </div>
         </Col>

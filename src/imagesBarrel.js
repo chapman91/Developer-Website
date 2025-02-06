@@ -14,7 +14,9 @@ const IMAGES = {
     comptiaIcon: require('./assets/icons/comptia.svg').default,
     instagramIcon: require('./assets/icons/instagram.svg').default,
     twitterIcon: require('./assets/icons/twitter.svg').default,
-    reactIcon: require('./assets/icons/react.svg').default
+    reactIcon: require('./assets/icons/react.svg').default,
+    nextjsIcon: require('./assets/icons/nextjs.svg').default,
+    sqlIcon: require('./assets/icons/sql.svg').default
 }
 
 export default IMAGES
